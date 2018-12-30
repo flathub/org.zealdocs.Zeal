@@ -12,7 +12,8 @@
     "--socket=x11",
     "--share=ipc",
     "--device=dri",
-    "--share=network"
+    "--share=network",
+    "--talk-name=org.kde.StatusNotifierWatcher"
   ],
   "cleanup": [
     "/mkspecs",

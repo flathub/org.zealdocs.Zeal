@@ -1,10 +1,10 @@
 {
   "id": "org.zealdocs.Zeal",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.11",
+  "runtime-version": "5.12",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebkit.BaseApp",
-  "base-version": "5.11",
+  "base-version": "5.12",
   "command": "zeal",
   "rename-icon": "zeal",
   "finish-args": [

@@ -1,10 +1,10 @@
 {
   "id": "org.zealdocs.Zeal",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.12",
+  "runtime-version": "5.15",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebkit.BaseApp",
-  "base-version": "5.12",
+  "base-version": "5.15",
   "command": "zeal",
   "rename-icon": "zeal",
   "finish-args": [
@@ -35,6 +35,10 @@
           "type": "archive",
           "url": "https://github.com/zealdocs/zeal/releases/download/v0.6.1/zeal-0.6.1.tar.xz",
           "sha256": "fbb9279233d2b8245b49de0228ae0d044584a8ae74cfd5239c16d5088b1fc78b"
+        },
+        {
+          "type": "patch",
+          "path": "0001-fix-ui-fix-compilation-error-with-Qt-5.15-1218.patch"
         }
       ]
     }

@@ -1,46 +1,51 @@
 {
-  "id": "org.zealdocs.Zeal",
-  "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
-  "sdk": "org.kde.Sdk",
-  "base": "io.qt.qtwebkit.BaseApp",
-  "base-version": "5.15-21.08",
-  "command": "zeal",
-  "rename-icon": "zeal",
-  "finish-args": [
-    "--socket=wayland",
-    "--socket=x11",
-    "--share=ipc",
-    "--device=dri",
-    "--share=network",
-    "--talk-name=org.kde.StatusNotifierWatcher"
-  ],
-  "cleanup": [
-    "/mkspecs",
-    "/include",
-    "/lib/cmake",
-    "/lib/mkspecs"
-  ],
-  "modules": [
-    {
-      "name": "zeal",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-        "-DQt5WebKit_DIR=/app/lib/cmake/Qt5WebKit",
-        "-DQt5WebKitWidgets_DIR=/app/lib/cmake/Qt5WebKitWidgets"
-      ],
-      "sources": [
+    "id": "org.zealdocs.Zeal",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-21.08",
+    "sdk": "org.kde.Sdk",
+    "base": "io.qt.qtwebkit.BaseApp",
+    "base-version": "5.15-21.08",
+    "command": "zeal",
+    "rename-icon": "zeal",
+    "finish-args": [
+        "--socket=wayland",
+        "--socket=x11",
+        "--share=ipc",
+        "--device=dri",
+        "--share=network",
+        "--talk-name=org.kde.StatusNotifierWatcher"
+    ],
+    "cleanup": [
+        "/mkspecs",
+        "/include",
+        "/lib/cmake",
+        "/lib/mkspecs"
+    ],
+    "modules": [
         {
-          "type": "archive",
-          "url": "https://github.com/zealdocs/zeal/releases/download/v0.6.1/zeal-0.6.1.tar.xz",
-          "sha256": "fbb9279233d2b8245b49de0228ae0d044584a8ae74cfd5239c16d5088b1fc78b"
-        },
-        {
-          "type": "patch",
-          "path": "0001-fix-ui-fix-compilation-error-with-Qt-5.15-1218.patch"
+            "name": "zeal",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DQt5WebKit_DIR=/app/lib/cmake/Qt5WebKit",
+                "-DQt5WebKitWidgets_DIR=/app/lib/cmake/Qt5WebKitWidgets"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/zealdocs/zeal.git",
+                    "commit": "3bdb8ee0fd5b9062cdcba1d38aad2e09d2757bdd",
+                    "tag": "v0.6.1",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-fix-ui-fix-compilation-error-with-Qt-5.15-1218.patch"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,11 +1,13 @@
 {
     "id": "org.zealdocs.Zeal",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
-    "base": "io.qt.qtwebkit.BaseApp",
-    "base-version": "5.15-21.08",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "5.15-22.08",
     "command": "zeal",
+    "rename-appdata-file": "org.zealdocs.zeal.appdata.xml",
+    "rename-desktop-file": "org.zealdocs.zeal.desktop",
     "rename-icon": "zeal",
     "finish-args": [
         "--socket=wayland",
@@ -15,11 +17,8 @@
         "--share=network",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
-    "cleanup": [
-        "/mkspecs",
-        "/include",
-        "/lib/cmake",
-        "/lib/mkspecs"
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
     ],
     "modules": [
         {
@@ -27,15 +26,14 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DQt5WebKit_DIR=/app/lib/cmake/Qt5WebKit",
-                "-DQt5WebKitWidgets_DIR=/app/lib/cmake/Qt5WebKitWidgets"
+                "-DZEAL_RELEASE_BUILD=ON"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/zealdocs/zeal.git",
-                    "commit": "3bdb8ee0fd5b9062cdcba1d38aad2e09d2757bdd",
-                    "tag": "v0.6.1",
+                    "commit": "90ad776e83f182221cafd329f2e58cf0621ea3f1",
+                    "tag": "v0.7.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -43,7 +41,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "0001-fix-ui-fix-compilation-error-with-Qt-5.15-1218.patch"
+                    "path": "patches/capitalize-app-id.patch"
                 }
             ]
         }

@@ -42,6 +42,10 @@
                 {
                     "type": "patch",
                     "path": "patches/capitalize-app-id.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/metainfo-add-launchable-tag.patch"
                 }
             ]
         }

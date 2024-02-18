@@ -1,0 +1,10 @@
+diff --git a/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in b/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
+index 88abd54..b44068d 100644
+--- a/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
++++ b/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
+@@ -59,4 +59,5 @@
+     <content_attribute id="money-purchasing">none</content_attribute>
+     <content_attribute id="money-gambling">none</content_attribute>
+   </content_rating>
++  <launchable type="desktop-id">org.zealdocs.zeal.desktop</launchable>
+ </component>

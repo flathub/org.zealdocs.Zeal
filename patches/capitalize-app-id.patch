@@ -1,12 +1,13 @@
-diff --git a/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in b/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
-index 88abd54..a74ff91 100644
---- a/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
-+++ b/assets/freedesktop/org.zealdocs.zeal.appdata.xml.in
-@@ -1,6 +1,6 @@
- <?xml version="1.0" encoding="UTF-8"?>
- <component type="desktop">
--  <id>org.zealdocs.zeal</id>
-+  <id>org.zealdocs.Zeal</id>
-   <name>Zeal</name>
-   <metadata_license>CC0-1.0</metadata_license>
-   <project_license>GPL-3.0-or-later</project_license>
+diff --git a/src/app/main.cpp b/src/app/main.cpp
+index 765bfe3..8d2bd33 100644
+--- a/src/app/main.cpp
++++ b/src/app/main.cpp
+@@ -233,7 +233,7 @@ int main(int argc, char *argv[])
+     }
+ 
+     // Set application-wide window icon. All message boxes and other windows will use it by default.
+-    qapp->setDesktopFileName(QStringLiteral("org.zealdocs.zeal"));
++    qapp->setDesktopFileName(QStringLiteral("org.zealdocs.Zeal"));
+     qapp->setWindowIcon(QIcon::fromTheme(QStringLiteral("zeal"),
+                                          QIcon(QStringLiteral(":/zeal.ico"))));
+ 

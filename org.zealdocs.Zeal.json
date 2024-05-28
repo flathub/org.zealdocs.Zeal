@@ -1,10 +1,10 @@
 {
     "id": "org.zealdocs.Zeal",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.7",
     "sdk": "org.kde.Sdk",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "6.7",
     "command": "zeal",
     "rename-appdata-file": "org.zealdocs.zeal.appdata.xml",
     "rename-desktop-file": "org.zealdocs.zeal.desktop",

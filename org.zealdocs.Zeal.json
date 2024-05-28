@@ -32,8 +32,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zealdocs/zeal.git",
-                    "commit": "90ad776e83f182221cafd329f2e58cf0621ea3f1",
-                    "tag": "v0.7.0",
+                    "commit": "7f938cf4e87b22abc5efd4155b78ea8127eefc4b",
+                    "tag": "v0.7.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -42,10 +42,6 @@
                 {
                     "type": "patch",
                     "path": "patches/capitalize-app-id.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/metainfo-add-launchable-tag.patch"
                 }
             ]
         }

@@ -32,8 +32,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zealdocs/zeal.git",
-                    "commit": "7f938cf4e87b22abc5efd4155b78ea8127eefc4b",
-                    "tag": "v0.7.1",
+                    "commit": "66b30331f84a0081cbaa8955f92c8e42a990a1ca",
+                    "tag": "v0.7.2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"

@@ -10,11 +10,11 @@
     "rename-desktop-file": "org.zealdocs.zeal.desktop",
     "rename-icon": "zeal",
     "finish-args": [
-        "--socket=wayland",
-        "--socket=fallback-x11",
-        "--share=ipc",
         "--device=dri",
+        "--share=ipc",
         "--share=network",
+        "--socket=fallback-x11",
+        "--socket=wayland",
         "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "cleanup-commands": [

@@ -24,6 +24,7 @@
         {
             "name": "zeal",
             "buildsystem": "cmake-ninja",
+            "builddir": true,
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DZEAL_RELEASE_BUILD=ON"

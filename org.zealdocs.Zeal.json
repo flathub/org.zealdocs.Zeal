@@ -41,8 +41,10 @@
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "patches/capitalize-app-id.patch"
+                    "type": "shell",
+                    "commands": [
+                        "sed -i 's/setDesktopFileName(QStringLiteral(\"org.zealdocs.zeal\"))/setDesktopFileName(QStringLiteral(\"org.zealdocs.Zeal\"))/' src/app/main.cpp"
+                    ]
                 }
             ]
         }

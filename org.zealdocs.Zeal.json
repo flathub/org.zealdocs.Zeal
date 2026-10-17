@@ -26,7 +26,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DZEAL_FEATURE_UPDATE_CHECK=OFF"
             ],
             "sources": [
                 {
